@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,42 +18,103 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="font-poppins bg-pale-white">
-    <header class="lg:px-32">
+    <header class="lg:px-28 lg:pb-12">
         <!-- Navigation section -->
         <div class="navbar py-10">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm font-bold text-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="mx-4 text-pale-orange"><a>Home</a></li>
+                        <li class="mx-4 hover:text-pale-orange"><a>Destination</a></li>
+                        <li class="mx-4 hover:text-pale-orange"><a>Tours</a></li>
+                        <li class="mx-4 hover:text-pale-orange"><a>Blog</a></li>
+                        <li class="mx-4 hover:text-pale-orange"><a>Contact Us</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm font-bold text-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <a class="btn btn-ghost text-3xl font-bold"><span class="text-pale-green">Travel</span><span
+                        class="text-pale-orange">Haven</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-bold text-sm lg:ml-16">
                     <li class="mx-4 text-pale-orange"><a>Home</a></li>
                     <li class="mx-4 hover:text-pale-orange"><a>Destination</a></li>
                     <li class="mx-4 hover:text-pale-orange"><a>Tours</a></li>
                     <li class="mx-4 hover:text-pale-orange"><a>Blog</a></li>
                     <li class="mx-4 hover:text-pale-orange"><a>Contact Us</a></li>
                 </ul>
-              </div>
-              <a class="btn btn-ghost text-3xl font-bold"><span class="text-pale-green">Travel</span><span class="text-pale-orange">Haven</span></a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 font-bold text-sm lg:ml-16">
-                <li class="mx-4 text-pale-orange"><a>Home</a></li>
-                <li class="mx-4 hover:text-pale-orange"><a>Destination</a></li>
-                <li class="mx-4 hover:text-pale-orange"><a>Tours</a></li>
-                <li class="mx-4 hover:text-pale-orange"><a>Blog</a></li>
-                <li class="mx-4 hover:text-pale-orange"><a>Contact Us</a></li>
-              </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-pale-green text-pale-white px-10 text-lg border-2 border-pale-green hover:bg-transparent hover:text-pale-green hover:border-pale-green">Sign In</a>
+                <a
+                    class="btn bg-pale-green text-pale-white px-10 text-lg border-2 border-pale-green hover:bg-transparent hover:text-pale-green hover:border-pale-green">Sign
+                    In</a>
             </div>
-          </div>
+        </div>
 
-          <!-- banner section -->
+        <!-- banner section -->
+        <div class="hero rounded-lg" style="background-image: url(./images/banner.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content py-12 lg:py-24">
+                <div class="lg:max-w-[650px]">
+                    <h1 class="mb-5 text-4xl lg:text-5xl font-bold capitalize">Explore to your heart's content</h1>
+                    <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                </div>                             
+            </div>            
+        </div>
+        <div class="overlayed w-full lg:w-[800px] lg:-translate-y-8 lg:translate-x-[180px]">
+            <div class="find-dest lg:px-4 py-5 bg-[#cd7f324d] rounded-lg flex flex-row justify-between gap-1 lg:gap-3">
+                <div class="location-section">
+                    <select class="lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
+                        <option value="" selected>Destination</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="China">China</option>
+                    </select>
+                </div>
+                <div class="month-section">
+                    <select class="lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
+                        <option value="" selected>Month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
+                <div class="package-section">
+                    <select class="lg:w-44 text-black lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
+                        <option value="" selected>Travel Type</option>
+                        <option value="Single">Single</option>
+                        <option value="Family">Family</option>
+                    </select>
+                </div>
+                <div class="button-section">
+                    <button class="btn uppercase bg-pale-green text-pale-white lg:px-7 text-base lg:text-lg border-2 border-pale-green hover:bg-pale-white hover:text-pale-green hover:border-pale-green">Find Now</button>
+                </div>
+            </div> 
+        </div>
     </header>
 
     <main></main>
@@ -61,17 +123,18 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'pale-green': '#527853',
-                'pale-white': '#F9E8D9',
-                'light-orange': '#F7B787',
-                'pale-orange': '#EE7214',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'pale-green': '#527853',
+                        'pale-white': '#F9E8D9',
+                        'light-orange': '#F7B787',
+                        'pale-orange': '#EE7214',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </body>
+
 </html>

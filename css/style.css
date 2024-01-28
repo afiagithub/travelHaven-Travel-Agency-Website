@@ -1,3 +1,7 @@
 .font-poppins{
     font-family: 'Poppins', sans-serif;
 }
+
+.para-height{
+    line-height: 26px;
+}
