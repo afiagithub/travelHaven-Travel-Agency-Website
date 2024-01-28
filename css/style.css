@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.font-pacifico{
+    font-family: 'Pacifico', cursive;
+}
+
 .para-height{
     line-height: 26px;
 }

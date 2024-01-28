@@ -20,10 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-poppins bg-pale-white">
-    <header class="lg:px-28 lg:pb-12">
+    <header class="px-4 lg:px-28 pb-8 lg:pb-12">
         <!-- Navigation section -->
         <div class="navbar py-10">
             <div class="navbar-start">
@@ -44,7 +45,7 @@
                         <li class="mx-4 hover:text-pale-orange"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-3xl font-bold"><span class="text-pale-green">Travel</span><span
+                <a class="btn btn-ghost text-3xl font-bold font-pacifico"><span class="text-pale-green ">Travel</span><span
                         class="text-pale-orange">Haven</span></a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -71,10 +72,10 @@
                     <h1 class="mb-5 text-4xl lg:text-5xl font-bold capitalize">Explore to your heart's content</h1>
                     <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                         exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                </div>                             
-            </div>            
+                </div>
+            </div>
         </div>
-        <div class="overlayed w-full lg:w-[800px] lg:-translate-y-8 lg:translate-x-[180px]">
+        <div class="overlayed w-full lg:w-[800px] lg:-translate-y-8 lg:translate-x-[180px] hidden lg:flex">
             <div class="find-dest lg:px-4 py-5 bg-[#cd7f324d] rounded-lg flex flex-row justify-between gap-1 lg:gap-3">
                 <div class="location-section">
                     <select class="lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
@@ -111,13 +112,89 @@
                     </select>
                 </div>
                 <div class="button-section">
-                    <button class="btn uppercase bg-pale-green text-pale-white lg:px-7 text-base lg:text-lg border-2 border-pale-green hover:bg-pale-white hover:text-pale-green hover:border-pale-green">Find Now</button>
+                    <button
+                        class="btn uppercase bg-pale-green text-pale-white lg:px-7 text-base lg:text-lg border-2 border-pale-green hover:bg-pale-white hover:text-pale-green hover:border-pale-green">Find
+                        Now</button>
                 </div>
-            </div> 
+            </div>
         </div>
     </header>
 
-    <main></main>
+    <main class="px-6 lg:px-28 pb-6 lg:pb-12">
+        <!-- Destination section -->
+        <div class="dest-section">
+            <div class="dest-heading text-center lg:w-3/5 mx-auto mb-6 lg:mb-12">
+                <h1 class="text-4xl font-light mb-4 lg:mb-7 font-pacifico">Choose Your <span class="text-pale-orange">Next Stop</span></h1>
+                <p class="para-height text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis quo harum non qui maiores
+                    optio ad nulla quis blanditiis atque architecto autem doloribus enim.</p>
+            </div>
+            <div class="dest-content grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/india1.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#0047ab99] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">India</h3>
+                        <p class="text-white">Tours in - Chennai, Pune, Dehli</p>
+                    </div>
+                </div>
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/bangla.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#52785399] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Bangladesh</h3>
+                        <p class="text-white">Tours in - Dhaka, Chittagong</p>
+                    </div>
+                </div>                 
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/maldives.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#0047ab99] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Maldives</h3>
+                        <p class="text-white">Tours in - Kaafu, Baa, Meemu</p>
+                    </div>
+                </div>
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/napal.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#36454fcc] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Nepal</h3>
+                        <p class="text-white">Tours in - Koshi, Madhesh</p>
+                    </div>
+                </div>
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/china.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#ffc70099] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">China</h3>
+                        <p class="text-white">Tours in - Kaafu, Baa, Meemu</p>
+                    </div>
+                </div>
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/norway.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#80002099] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Norway</h3>
+                        <p class="text-white">Tours in - Oslo, Drammen</p>
+                    </div>
+                </div>
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/japan.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#80002099] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Japan</h3>
+                        <p class="text-white">Tours in - Koyoto, Tokyo</p>
+                    </div>
+                </div>
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/korea.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#52785399] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Korea</h3>
+                        <p class="text-white">Tours in - Seoul, Busan</p>
+                    </div>
+                </div> 
+                <div class="dest-country text-left relative">
+                    <img class="rounded-lg h-full" src="images/finland.jpg" alt="">
+                    <div class="label rounded-lg w-full flex flex-col items-start absolute bottom-0 bg-[#0047ab99] lg:px-8">
+                        <h3 class="text-white text-3xl font-semibold">Finland</h3>
+                        <p class="text-white">Tours in - Helsinki, Lahti</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
 
     <footer></footer>
 
