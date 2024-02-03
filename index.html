@@ -75,10 +75,11 @@
                 </div>
             </div>
         </div>
-        <div class="overlayed w-full lg:w-[800px] lg:-translate-y-8 lg:translate-x-[180px] hidden lg:flex">
-            <div class="find-dest lg:px-4 py-5 bg-[#cd7f324d] rounded-lg flex flex-row justify-between gap-1 lg:gap-3">
+        <div class="overlayed w-full mt-4 lg:mt-0 lg:w-[800px] lg:-translate-y-8 lg:translate-x-[180px]">
+            <div
+                class="find-dest px-2 lg:px-4 py-5 bg-[#cd7f324d] rounded-lg flex flex-col lg:flex-row justify-between gap-3">
                 <div class="location-section">
-                    <select class="lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
+                    <select class="w-full lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
                         <option value="" selected>Destination</option>
                         <option value="Bangladesh">Bangladesh</option>
                         <option value="India">India</option>
@@ -88,7 +89,7 @@
                     </select>
                 </div>
                 <div class="month-section">
-                    <select class="lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
+                    <select class="w-full lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
                         <option value="" selected>Month</option>
                         <option value="January">January</option>
                         <option value="February">February</option>
@@ -105,7 +106,7 @@
                     </select>
                 </div>
                 <div class="package-section">
-                    <select class="lg:w-44 text-black lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
+                    <select class="w-full lg:w-44 text-black px-3 lg:px-5 py-3 lg:py-4 font-bold text-base rounded-lg">
                         <option value="" selected>Travel Type</option>
                         <option value="Single">Single</option>
                         <option value="Family">Family</option>
@@ -113,7 +114,7 @@
                 </div>
                 <div class="button-section">
                     <button
-                        class="btn uppercase bg-pale-green text-pale-white lg:px-7 text-base lg:text-lg border-2 border-pale-green hover:bg-pale-white hover:text-pale-green hover:border-pale-green">Find
+                        class="btn w-full uppercase bg-pale-green text-pale-white lg:px-7 text-base lg:text-lg border-2 border-pale-green hover:bg-pale-white hover:text-pale-green hover:border-pale-green">Find
                         Now</button>
                 </div>
             </div>
@@ -121,6 +122,50 @@
     </header>
 
     <main class="px-6 lg:px-28 pb-6 lg:pb-12">
+        <!-- about us section -->
+        <div class="about-us-section mb-6 lg:mb-12">
+            <div class="about-us-heading text-center lg:w-3/5 mx-auto mb-6 lg:mb-12">
+                <h1 class="text-4xl lg:text-5xl font-light mb-4 lg:mb-7 font-pacifico">Our Journey<span
+                        class="capitalize text-pale-orange"> till now</span></h1>
+                <p class="para-height text-sm lg:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis facilis quo harum non qui maiores
+                    optio ad nulla quis blanditiis atque architecto autem doloribus enim.</p>
+            </div>
+            <div class="abou-us-content flex flex-col lg:flex-row justify-between gap-6">
+                <div class="about-us-details lg:w-1/2">
+                    <p class="mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi dolor quam excepturi
+                        dignissimos et nam aut nobis aspernatur ipsum nostrum asperiores exercitationem eligendi aperiam
+                        porro, libero ad facilis veniam! Eius consequatur porro ea tempore vel illo esse illum, iure
+                        commodi deserunt veniam ducimus quod dolore eveniet dolorem sequi officiis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione libero facere corporis
+                        autem culpa optio cum sit, nemo molestiae.</p>
+                    <div class="journey-details flex flex-row justify-between mt-10">
+                        <div class="tour-count">
+                            <p class="text-3xl font-semibold text-pale-green"><i class="fa-regular fa-compass"></i> 500+
+                            </p>
+                            <p class="font-bold">Tours Completed</p>
+                        </div>
+                        <div class="place-count">
+                            <p class="text-3xl font-semibold text-pale-green"><i class="fa-solid fa-location-dot"></i>
+                                50+ </p>
+                            <p class="font-bold">Places Visited</p>
+                        </div>
+                        <div class="country-count">
+                            <p class="text-3xl font-semibold text-pale-green"><i class="fa-solid fa-earth-americas"></i>
+                                15+ </p>
+                            <p class="font-bold">Countries Toured</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="about-us-img grid grid-cols-2 gap-3 lg:w-1/2">
+                    <img src="images/1.jpg" alt="">
+                    <img src="images/2.jpg" alt="">
+                    <img src="images/3.jpg" alt="">
+                    <img src="images/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
         <!-- Destination section -->
         <div class="dest-section">
             <div class="dest-heading text-center lg:w-3/5 mx-auto mb-6 lg:mb-12">
@@ -396,7 +441,8 @@
             <div class="review-content">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
-                        <div class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/india1.jpg)]">
+                        <div
+                            class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/india1.jpg)]">
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="lg:w-3/5">
                                     <img class="w-20 h-20 rounded-full mx-auto" src="images/female1.jpg" alt="">
@@ -421,7 +467,8 @@
                         </div>
                     </div>
                     <div id="slide2" class="carousel-item relative w-full">
-                        <div class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/japan.jpg)]">
+                        <div
+                            class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/japan.jpg)]">
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="lg:w-3/5">
                                     <img class="w-20 h-20 rounded-full mx-auto" src="images/male.jpg" alt="">
@@ -446,7 +493,8 @@
                         </div>
                     </div>
                     <div id="slide3" class="carousel-item relative w-full">
-                        <div class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/india1.jpg)]">
+                        <div
+                            class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/india1.jpg)]">
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="lg:w-3/5">
                                     <img class="w-20 h-20 rounded-full mx-auto" src="images/female1.jpg" alt="">
@@ -471,7 +519,8 @@
                         </div>
                     </div>
                     <div id="slide4" class="carousel-item relative w-full">
-                        <div class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/japan.jpg)]">
+                        <div
+                            class="hero py-7 bg-[linear-gradient(45deg,rgba(19,19,24,0.5),rgba(19,19,24,0.5)),url(./images/japan.jpg)]">
                             <div class="hero-content text-center text-neutral-content">
                                 <div class="lg:w-3/5">
                                     <img class="w-20 h-20 rounded-full mx-auto" src="images/male.jpg" alt="">
@@ -515,8 +564,11 @@
                 <div class="contact-form w-full lg:w-1/2">
                     <input class="px-4 py-3 mb-5 w-full rounded-lg" type="text" placeholder="Your name"> <br>
                     <input class="px-4 py-3 mb-5 w-full rounded-lg" type="email" placeholder="Your email"> <br>
-                    <textarea class="px-4 py-3 mb-5 w-full rounded-lg" cols="30" rows="7" placeholder="Your message"></textarea>
-                    <button class="btn w-full bg-pale-orange text-2xl text-white border-2 border-pale-orange hover:bg-transparent hover:text-pale-orange hover:border-pale-orange">Send Message</button>
+                    <textarea class="px-4 py-3 mb-5 w-full rounded-lg" cols="30" rows="7"
+                        placeholder="Your message"></textarea>
+                    <button
+                        class="btn w-full bg-pale-orange text-2xl text-white border-2 border-pale-orange hover:bg-transparent hover:text-pale-orange hover:border-pale-orange">Send
+                        Message</button>
                 </div>
             </div>
         </div>
@@ -525,39 +577,41 @@
     <!-- footer section -->
     <footer class="">
         <div class="footer px-10 lg:px-28 py-12 bg-pale-green text-pale-white text-base-content">
-            <aside>              
+            <aside>
                 <a class="btn btn-ghost text-3xl font-bold font-pacifico"><span
-                    class="text-green-950 ">Travel</span><span class="text-pale-orange">Haven</span></a>
+                        class="text-green-950 ">Travel</span><span class="text-pale-orange">Haven</span></a>
                 <p class="text-base lg:ml-6"><i class="fa-regular fa-envelope"></i>&nbsp; travelhaven@gmail.com</p>
                 <p class="text-base lg:ml-6"><i class="fa-solid fa-phone"></i>&nbsp; +8801516111914</p>
-                <p class="text-base lg:ml-6"><i class="fa-solid fa-location-dot"></i>&nbsp; Gazipur, Dhaka, Bangladesh</p>
-            </aside> 
+                <p class="text-base lg:ml-6"><i class="fa-solid fa-location-dot"></i>&nbsp; Gazipur, Dhaka, Bangladesh
+                </p>
+            </aside>
             <nav>
-              <h6 class="text-lg font-semibold text-pale-orange">Quick Links</h6> 
-              <a class="link link-hover text-base">Destinations</a>
-              <a class="link link-hover text-base">Tours</a>
-              <a class="link link-hover text-base">Blog</a>
-              <a class="link link-hover text-base">Contact</a>
-            </nav> 
+                <h6 class="text-lg font-semibold text-pale-orange">Quick Links</h6>
+                <a class="link link-hover text-base">Destinations</a>
+                <a class="link link-hover text-base">Tours</a>
+                <a class="link link-hover text-base">Blog</a>
+                <a class="link link-hover text-base">Contact</a>
+            </nav>
             <nav>
-              <h6 class="text-lg font-semibold text-pale-orange">Social Media</h6> 
-              <a class="link link-hover text-base"><i class="fa-brands fa-facebook-f"></i> &nbsp; Facebook</a>
-              <a class="link link-hover text-base"><i class="fa-brands fa-twitter"></i> &nbsp; Twitter</a>
-              <a class="link link-hover text-base"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</a>
-              <a class="link link-hover text-base"><i class="fa-brands fa-youtube"></i> &nbsp; YouTube</a>
-            </nav> 
+                <h6 class="text-lg font-semibold text-pale-orange">Social Media</h6>
+                <a class="link link-hover text-base"><i class="fa-brands fa-facebook-f"></i> &nbsp; Facebook</a>
+                <a class="link link-hover text-base"><i class="fa-brands fa-twitter"></i> &nbsp; Twitter</a>
+                <a class="link link-hover text-base"><i class="fa-brands fa-instagram"></i> &nbsp; Instagram</a>
+                <a class="link link-hover text-base"><i class="fa-brands fa-youtube"></i> &nbsp; YouTube</a>
+            </nav>
             <form>
-                <h6 class="text-lg font-semibold text-pale-orange">Our Newsletter</h6> 
+                <h6 class="text-lg font-semibold text-pale-orange">Our Newsletter</h6>
                 <fieldset class="form-control w-80">
-                  <label class="label">
-                    <span class="label-text text-pale-white text-base">Enter your email address</span>
-                  </label> 
-                  <div class="join">
-                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
-                    <button class="btn bg-pale-orange border-pale-orange hover:text-pale-orange hover:bg-transparent hover:border-pale-orange text-pale-white join-item">Subscribe</button>
-                  </div>
+                    <label class="label">
+                        <span class="label-text text-pale-white text-base">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                        <button
+                            class="btn bg-pale-orange border-pale-orange hover:text-pale-orange hover:bg-transparent hover:border-pale-orange text-pale-white join-item">Subscribe</button>
+                    </div>
                 </fieldset>
-            </form>          
+            </form>
         </div>
         <aside class="bg-pale-green text-center text-pale-white">
             <p>Copyright © 2024 - All right reserved by Afia Rahman</p>
